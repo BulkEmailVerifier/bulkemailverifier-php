@@ -1,7 +1,7 @@
 <?php
 $email = "test@example.com";
 $key = "PUT YOUR API KEY HERE";
-$url = "https://apps.bounceless.io/api/singlemaildetails?secret=" . $key . "&email=" . $email;
+$url = "https://client.bulkemailverifier.com/api/singlemaildetails?secret=" . $key . "&email=" . $email;
 
 $ch = curl_init();
 
@@ -62,4 +62,3 @@ The description for each parameter in the JSON response is as follows:
     did_you_mean: Provides a suggested email address if there was a typo in the provided email address. This field may be null if no suggestion is available.
     message: An additional message or information related to the email verification.
 */
-?>
