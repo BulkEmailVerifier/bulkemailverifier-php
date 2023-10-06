@@ -88,7 +88,7 @@ echo json_encode($data, JSON_PRETTY_PRINT);
 <?php
 $key = "PUT YOUR API KEY HERE";
 $settings['file_contents'] = new CURLFile('/path/to/your/file.txt'); // path to your file
-$url = 'https://client.bulkemailverifier.com/api/verifApiFile?secret='.$key.'&filename=my_emails.txt';
+$url = 'https://client.bulkemailverifier.com/api/verifyApiFile?secret='.$key.'&filename=my_emails.txt';
 
 $ch = curl_init($url);
 curl_setopt_array($ch, [
