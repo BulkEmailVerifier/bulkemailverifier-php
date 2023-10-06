@@ -3,7 +3,7 @@ $key = "PUT YOUR API KEY HERE";
 
 // Upload the file
 $settings['file_contents'] = new CURLFile('/home/Downloads/emails.txt'); // path to your file
-$url = 'https://client.bulkemailverifier.com/api/verifApiFile?secret='.$key.'&filename=my_emails.txt';
+$url = 'https://client.bulkemailverifier.com/api/verifyApiFile?secret='.$key.'&filename=my_emails.txt';
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_POST, true);
